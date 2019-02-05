@@ -1,3 +1,50 @@
 body {
-  background: #999999;
+  background: #ffffff;
+}
+
+header {
+  margin: 70px auto 0 auto;
+  max-width: 800px;
+  display: flex;
+  align-items: center;
+
+  img {
+    border-radius: 50%;
+    display: inline-block;
+    // margin-top: 50px;
+  }
+
+  nav {
+    max-width: 800px;
+    width: 600px;
+    // height: 200px;
+    padding-left: 30px;
+    display: inline-block;
+
+    h1 {
+      font-size: 2.5rem;
+
+      a {
+        color: #22292f;
+        text-decoration: none;
+        font-weight: 700;
+      }
+    }
+
+    ul {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 25px;
+      color: #8795a1;
+
+      a {
+        letter-spacing: 1.3px;
+        font-size: 0.9rem;
+
+        &:hover {
+          color: #22292f;
+        }
+      }
+    }
+  }
 }
