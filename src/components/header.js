@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import headshot from '../images/headshot-sm.png';
 
+// STILL NEED TO MAKE RESPONSIVE
+
 const Header = ({ siteTitle }) => (
   <header>
     <img src={headshot} alt="Headshot of Austin Jess" />
