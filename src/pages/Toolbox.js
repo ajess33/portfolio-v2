@@ -2,9 +2,11 @@ import React from 'react';
 import { Link } from 'gatsby';
 import '../styles/home.scss';
 import Layout from '../components/layout';
+import SEO from '../components/seo';
 
 const Toolbox = () => (
   <Layout>
+    <SEO title="Toolbox" />
     <main className="tool-wrapper">
       <h1 className="section-title">My Toolbox</h1>
       <ul>

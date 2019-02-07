@@ -10,8 +10,8 @@ const IndexPage = () => (
     <main className="about-wrapper">
       <h1 className="section-title">Who Am I?</h1>
       <p>
-        My name is <a href="https://twitter.com/ajessscript">Austin Jess</a> and
-        I'm a web developer.
+        I'm <a href="https://twitter.com/ajessscript">@austinjessJS</a> and I'm
+        a web developer.
       </p>
       <p>
         I'm a deer hunter. I go all the time with my dad. One thing about deer:
