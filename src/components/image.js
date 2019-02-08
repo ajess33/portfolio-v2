@@ -33,11 +33,15 @@ import Img from 'gatsby-image';
 // );
 // export default Image;
 
-export const DunderImage = () => (
+// COMMENTS FROM JOEEEEEEE
+// Gatsby exports a default export
+
+// Also the query you wrote needed a small change. You basically had it right, minius the fileName part.
+const DunderImage = () => (
   <StaticQuery
     query={graphql`
       query {
-        placeholderImage: file(relativePath: { eq: "dunderIpsum-550.png" }) {
+        fileName: file(relativePath: { eq: "dunderIpsum-550.png"}) {
           childImageSharp {
             fluid(maxWidth: 550) {
               ...GatsbyImageSharpFluid
@@ -46,11 +50,16 @@ export const DunderImage = () => (
         }
       }
     `}
-    render={(data) => (
-      <Img fluid={data.placeholderImage.childImageSharp.fluid} />
-    )}
+    render={(data) => {
+
+      return (
+        <Img fluid={data.fileName.childImageSharp.fluid} />
+      )
+  }}
   />
 );
+
+export default DunderImage
 
 // export const query = graphql`
 //   query {
@@ -79,3 +88,4 @@ export const DunderImage = () => (
 //     }
 //   }
 // `;
+
