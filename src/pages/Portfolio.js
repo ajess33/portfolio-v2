@@ -3,7 +3,7 @@ import React from 'react';
 import { Img } from 'gatsby-image';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import DunderImage from '../images/dunderIpsum-550.png';
+import DunderImage from '../components/image';
 
 const SecondPage = ({ data }) => (
   <Layout>
