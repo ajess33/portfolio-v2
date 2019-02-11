@@ -66,6 +66,7 @@ header {
     // margin-top: 30px;
     color: $grey;
     font-size: 1.2rem;
+    margin-bottom: 20px;
 
     a {
       text-decoration: underline;
@@ -136,7 +137,8 @@ header {
 
   a {
     border: 1px solid $grey;
-    color: $grey;
+    color: white;
+    background-color: $grey;
     letter-spacing: 1.5px;
     border-radius: 3px;
     padding: 15px 25px;
@@ -147,8 +149,8 @@ header {
     }
 
     &:hover {
-      color: white;
-      background-color: $grey;
+      color: $grey;
+      background-color: #ffffff;
     }
   }
 }
