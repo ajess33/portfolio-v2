@@ -2,6 +2,7 @@ import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
 import headshot from '../images/headshot-sm.png';
+import { IoMdMenu } from 'react-icons/io';
 
 // STILL NEED TO MAKE RESPONSIVE
 
@@ -12,6 +13,9 @@ const Header = ({ siteTitle }) => (
       <h1>
         <Link to="/">{siteTitle}</Link>
       </h1>
+      <div className="menu-mobile">
+        <IoMdMenu size={35} />
+      </div>
       <ul>
         <li>
           <Link to="/Portfolio/">PORTFOLIO</Link>

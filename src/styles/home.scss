@@ -2,9 +2,24 @@ $dark-grey: #22292f;
 $secondary-grey: #8795a1;
 $grey: #3d4852;
 
+$breakpoint-tablet: 768px;
+$breakpoint-mobile: 420px;
+
 body {
   background: #ffffff;
   color: $grey;
+}
+
+.chunky-link {
+  display: inline;
+  background-image: linear-gradient(
+    0deg,
+    hsl(208.6, 14.7, 70),
+    hsl(207.7, 12.1, 90)
+  );
+  background-repeat: no-repeat;
+  background-size: 100% 25%;
+  background-position: 0 95%;
 }
 
 // HEADER
@@ -14,22 +29,40 @@ header {
   max-width: 1000px;
   display: flex;
   align-items: center;
+
+  .menu-icon {
+    border-radius: 0;
+    width: 30px;
+    height: 25px;
+  }
   img {
     border-radius: 50%;
     display: inline-block;
+
+    @media (max-width: $breakpoint-mobile) {
+      width: 75px;
+    }
   }
   nav {
     max-width: 800px;
     width: 600px;
-    // height: 200px;
     padding-left: 70px;
     display: inline-block;
+
+    @media (max-width: $breakpoint-mobile) {
+      padding-left: 20px;
+    }
     h1 {
       font-size: 2.5rem;
+      // font-weight: 900;
+      @media (max-width: $breakpoint-mobile) {
+        font-size: 1.3rem;
+        display: inline-block;
+      }
       a {
         color: $dark-grey;
         text-decoration: none;
-        font-weight: 700;
+        font-weight: 800;
       }
     }
     ul {
@@ -37,6 +70,7 @@ header {
       justify-content: space-between;
       margin-top: 30px;
       color: $secondary-grey;
+      padding-left: 0;
       a {
         letter-spacing: 1.3px;
         font-size: 0.9rem;
@@ -46,6 +80,23 @@ header {
         }
       }
     }
+
+    @media (max-width: $breakpoint-mobile) {
+      ul {
+        display: none;
+      }
+    }
+  }
+}
+
+.menu-mobile {
+  display: none;
+
+  @media (max-width: $breakpoint-mobile) {
+    display: inline;
+    position: absolute;
+    margin-left: 90px;
+    top: 93px;
   }
 }
 
@@ -69,7 +120,6 @@ header {
     margin-bottom: 20px;
 
     a {
-      text-decoration: underline;
       color: $dark-grey;
       font-weight: 700;
     }
@@ -103,7 +153,7 @@ header {
 
 .portfolio-wrapper {
   margin: 100px auto 0 auto;
-  max-width: 800px;
+  max-width: 600px;
 }
 
 .project-flex {
@@ -155,6 +205,11 @@ header {
   }
 }
 
+.projects {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 .project-info {
   margin-bottom: 50px;
 }
@@ -162,4 +217,32 @@ header {
 .project-image {
   margin-left: 100px;
   width: 300px;
+}
+
+// CONTACT
+
+.contact-wrapper {
+  margin: 100px auto 0 auto;
+  max-width: 600px;
+
+  ul {
+    max-width: 400px;
+  }
+
+  span {
+    font-size: 1.5rem;
+    color: $dark-grey;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+  }
+
+  li {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    display: inline-block;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
 }

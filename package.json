@@ -19,7 +19,9 @@
     "prop-types": "^15.6.2",
     "react": "^16.8.1",
     "react-dom": "^16.7.0",
-    "react-helmet": "^5.2.0"
+    "react-helmet": "^5.2.0",
+    "react-icons": "^3.4.0",
+    "typeface-montserrat": "0.0.54"
   },
   "keywords": [
     "gatsby"

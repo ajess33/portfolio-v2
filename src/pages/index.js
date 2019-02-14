@@ -1,17 +1,21 @@
 import React from 'react';
-import { Link } from 'gatsby';
 import '../styles/home.scss';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 
+// todo:
+
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <main className="about-wrapper">
+    <div className="about-wrapper">
       <h1 className="section-title">Who Am I?</h1>
       <p>
-        I'm <a href="https://twitter.com/ajessscript">@austinjessJS</a> and I'm
-        a web developer.
+        I'm{' '}
+        <a className="chunky-link" href="https://twitter.com/austinjessJS">
+          @austinjessJS
+        </a>{' '}
+        and I'm a web developer.
       </p>
       <p>
         I'm a deer hunter. I go all the time with my dad. One thing about deer:
@@ -23,7 +27,7 @@ const IndexPage = () => (
         Nobody steals from Creed Bratton and gets away with it. The last person
         to do this disappeared. His name? Creed Bratton
       </p>
-    </main>
+    </div>
   </Layout>
 );
 

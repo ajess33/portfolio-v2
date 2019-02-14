@@ -1,5 +1,4 @@
 import React from 'react';
-import { graphql } from 'gatsby';
 // import { Img } from 'gatsby-image';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
@@ -14,6 +13,8 @@ const Portfolio = ({ data }) => (
     <SEO title="Portfolio" />
     <div className="portfolio-wrapper">
       <h1 className="section-title">My Portfolio</h1>
+    </div>
+    <div className="projects">
       <DunderProject />
       <AcgProject />
       <PomoProject />
