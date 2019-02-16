@@ -2,8 +2,8 @@ $dark-grey: #22292f;
 $secondary-grey: #8795a1;
 $grey: #3d4852;
 
-$breakpoint-tablet: 768px;
-$breakpoint-mobile: 420px;
+$breakpoint-tablet: 900px;
+$breakpoint-mobile: 680px;
 
 body {
   background: #ffffff;
@@ -30,17 +30,22 @@ header {
   display: flex;
   align-items: center;
 
-  .menu-icon {
-    border-radius: 0;
-    width: 30px;
-    height: 25px;
+  @media (max-width: $breakpoint-mobile) {
+    // max-width: 700px;
+    margin: 35px 0 15px 0;
+    display: block;
   }
+
   img {
     border-radius: 50%;
     display: inline-block;
-
+    @media (max-width: $breakpoint-tablet) {
+      width: 125px;
+      height: 125px;
+    }
     @media (max-width: $breakpoint-mobile) {
       width: 75px;
+      height: 75px;
     }
   }
   nav {
@@ -48,15 +53,25 @@ header {
     width: 600px;
     padding-left: 70px;
     display: inline-block;
-
-    @media (max-width: $breakpoint-mobile) {
-      padding-left: 20px;
+    @media (max-width: $breakpoint-tablet) {
+      padding-left: 25px;
     }
+    @media (max-width: $breakpoint-mobile) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-left: 0;
+      max-width: 325px;
+      flex-flow: wrap;
+    }
+
     h1 {
       font-size: 2.5rem;
-      // font-weight: 900;
+      @media (max-width: $breakpoint-tablet) {
+        font-size: 2rem;
+      }
       @media (max-width: $breakpoint-mobile) {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
         display: inline-block;
       }
       a {
@@ -68,22 +83,23 @@ header {
     ul {
       display: flex;
       justify-content: space-between;
-      margin-top: 30px;
       color: $secondary-grey;
       padding-left: 0;
+
+      @media (max-width: $breakpoint-mobile) {
+        display: none;
+        width: 300px;
+        line-height: 1.4;
+        text-align: center;
+      }
+
       a {
         letter-spacing: 1.3px;
         font-size: 0.9rem;
-        font-weight: 400;
+        font-weight: 600;
         &:hover {
           color: $dark-grey;
         }
-      }
-    }
-
-    @media (max-width: $breakpoint-mobile) {
-      ul {
-        display: none;
       }
     }
   }
@@ -91,13 +107,21 @@ header {
 
 .menu-mobile {
   display: none;
-
+  width: 35px;
+  height: 35px;
+  color: $dark-grey;
   @media (max-width: $breakpoint-mobile) {
-    display: inline;
-    position: absolute;
-    margin-left: 90px;
-    top: 93px;
+    display: inline-block;
+    // display: inline;
+    // position: absolute;
+    // top: 90px;
+    // margin-left: 200px;
+    // cursor: pointer;
   }
+}
+
+.active {
+  display: block;
 }
 
 // ABOUT
@@ -111,6 +135,14 @@ header {
 .about-wrapper {
   margin: 100px auto 0 auto;
   max-width: 600px;
+
+  @media (max-width: $breakpoint-mobile) {
+    margin-top: 50px;
+
+    .section-title {
+      font-size: 1.5rem;
+    }
+  }
 
   p {
     line-height: 1.5;
@@ -131,6 +163,14 @@ header {
 .tool-wrapper {
   margin: 100px auto 0 auto;
   max-width: 600px;
+
+  @media (max-width: $breakpoint-mobile) {
+    margin-top: 50px;
+
+    .section-title {
+      font-size: 1.5rem;
+    }
+  }
 
   ul {
     display: flex;
@@ -154,6 +194,14 @@ header {
 .portfolio-wrapper {
   margin: 100px auto 0 auto;
   max-width: 600px;
+
+  @media (max-width: $breakpoint-mobile) {
+    margin-top: 50px;
+
+    .section-title {
+      font-size: 1.5rem;
+    }
+  }
 }
 
 .project-flex {
@@ -224,6 +272,14 @@ header {
 .contact-wrapper {
   margin: 100px auto 0 auto;
   max-width: 600px;
+
+  @media (max-width: $breakpoint-mobile) {
+    margin-top: 50px;
+
+    .section-title {
+      font-size: 1.5rem;
+    }
+  }
 
   ul {
     max-width: 400px;
