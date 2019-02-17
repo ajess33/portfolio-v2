@@ -6,9 +6,9 @@ const AcgImage = () => (
   <StaticQuery
     query={graphql`
       query {
-        acg: file(relativePath: { eq: "acg-500.png" }) {
+        acg: file(relativePath: { eq: "acg-website.png" }) {
           childImageSharp {
-            fixed(width: 300, height: 356) {
+            fixed(width: 350) {
               ...GatsbyImageSharpFixed
             }
           }

@@ -6,9 +6,9 @@ const PomoImage = () => (
   <StaticQuery
     query={graphql`
       query {
-        pomo: file(relativePath: { eq: "pomo-500.png" }) {
+        pomo: file(relativePath: { eq: "pomodoro.png" }) {
           childImageSharp {
-            fixed(width: 300, height: 356) {
+            fixed(width: 350) {
               ...GatsbyImageSharpFixed
             }
           }

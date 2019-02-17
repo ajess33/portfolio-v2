@@ -10,9 +10,9 @@ const DunderImage = () => (
   <StaticQuery
     query={graphql`
       query {
-        dunder: file(relativePath: { eq: "dunder-500.png" }) {
+        dunder: file(relativePath: { eq: "dunder-ipsum.png" }) {
           childImageSharp {
-            fixed(width: 300) {
+            fixed(width: 350) {
               ...GatsbyImageSharpFixed
             }
           }

@@ -1,5 +1,5 @@
 import React from 'react';
-// import { Img } from 'gatsby-image';
+import { Link } from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import DunderImage from '../components/image';
@@ -18,6 +18,9 @@ const Portfolio = ({ data }) => (
       <DunderProject />
       <AcgProject />
       <PomoProject />
+      <Link className="contact-button" to="/Contact/">
+        GET IN TOUCH
+      </Link>
     </div>
   </Layout>
 );
@@ -40,12 +43,12 @@ const DunderProject = () => (
           you've actually left them.
         </p>
       </div>
-      <div className="buttons">
+      <div>
         <a href="https://ajess33.github.io/dunder-mifflinipsum/">LIVE</a>
         <a href="https://github.com/ajess33/dunder-mifflinipsum">CODE</a>
       </div>
     </div>
-    <DunderImage className="project-image" />
+    <DunderImage />
   </div>
 );
 
@@ -70,7 +73,7 @@ const AcgProject = () => (
         <a href="https://github.com/ajess33/A-Clean-Getaway-Website">CODE</a>
       </div>
     </div>
-    <AcgImage className="project-image" />
+    <AcgImage />
   </div>
 );
 
@@ -95,6 +98,6 @@ const PomoProject = () => (
         <a href="https://github.com/ajess33/Pomodoro-Clock">CODE</a>
       </div>
     </div>
-    <PomoImage className="project-image" />
+    <PomoImage />
   </div>
 );

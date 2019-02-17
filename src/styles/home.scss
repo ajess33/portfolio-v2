@@ -22,6 +22,24 @@ body {
   background-position: 0 95%;
 }
 
+.contact-button {
+  border: 1px solid $dark-grey;
+  padding: 25px;
+  background: #fff;
+  border-radius: 10px;
+  color: $dark-grey;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  margin: 150px auto 0 auto;
+  display: block;
+  width: 150px;
+
+  &:hover {
+    color: #fff;
+    background: $dark-grey;
+  }
+}
+
 // HEADER
 
 header {
@@ -133,7 +151,7 @@ header {
 }
 
 .about-wrapper {
-  margin: 100px auto 0 auto;
+  margin: 100px auto 100px auto;
   max-width: 600px;
 
   @media (max-width: $breakpoint-mobile) {
@@ -142,6 +160,10 @@ header {
     .section-title {
       font-size: 1.5rem;
     }
+  }
+
+  .about-info {
+    margin-bottom: 75px;
   }
 
   p {
@@ -161,7 +183,7 @@ header {
 // TOOLBOX
 
 .tool-wrapper {
-  margin: 100px auto 0 auto;
+  margin: 100px auto 100px auto;
   max-width: 600px;
 
   @media (max-width: $breakpoint-mobile) {
@@ -178,9 +200,13 @@ header {
     flex-wrap: wrap;
     // margin-top: 30px;
     max-width: 550px;
+    margin-bottom: 85px;
+    padding: 0;
 
     li {
       background-color: #fafafa;
+      box-shadow: 0 1px 3px hsla(0, 0%, 0%, 0.2);
+      // text-shadow: 0 0 2px hsla(0, 0%, 0%, 0.2);
       padding: 10px 15px;
       font-size: 1.2rem;
       margin-top: 10px;
@@ -192,7 +218,7 @@ header {
 // PORTFOLIO
 
 .portfolio-wrapper {
-  margin: 100px auto 0 auto;
+  margin: 100px auto 100px auto;
   max-width: 600px;
 
   @media (max-width: $breakpoint-mobile) {
@@ -207,7 +233,14 @@ header {
 .project-flex {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-top: 50px;
+
+  @media (max-width: 785px) {
+    height: 700px;
+    flex-direction: column;
+    align-content: space-between;
+  }
 
   div {
     max-width: 400px;
@@ -231,6 +264,7 @@ header {
   p {
     margin: 25px 0;
     line-height: 1.5;
+    max-width: 300px;
   }
 
   a {
@@ -253,6 +287,10 @@ header {
   }
 }
 
+.button-wrap {
+  margin: 125px auto 100px auto;
+}
+
 .projects {
   max-width: 800px;
   margin: 0 auto;
@@ -262,15 +300,10 @@ header {
   margin-bottom: 50px;
 }
 
-.project-image {
-  margin-left: 100px;
-  width: 300px;
-}
-
 // CONTACT
 
 .contact-wrapper {
-  margin: 100px auto 0 auto;
+  margin: 100px auto 100px auto;
   max-width: 600px;
 
   @media (max-width: $breakpoint-mobile) {
@@ -286,7 +319,7 @@ header {
   }
 
   span {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     color: $dark-grey;
     font-weight: bold;
     letter-spacing: 1.5px;
@@ -298,7 +331,7 @@ header {
     display: inline-block;
 
     &:hover {
-      transform: scale(1.1);
+      transform: scale(1.2);
     }
   }
 }

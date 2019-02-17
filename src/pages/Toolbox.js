@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'gatsby';
 import '../styles/home.scss';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
@@ -25,6 +26,9 @@ const Toolbox = () => (
         <li>Express</li>
         <li>Netlify</li>
       </ul>
+      <Link className="contact-button" to="/Contact/">
+        GET IN TOUCH
+      </Link>
     </main>
   </Layout>
 );
