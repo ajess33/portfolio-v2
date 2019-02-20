@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Austin Jess`,
     description: `Portfolio for React.js web developer, Austin Jess`,
-    siteURL: `https://hungry-noyce-5f4b38.netlify.com/`,
+    siteURL: `https://austinjess.me`,
     author: `Austin Jess`
   },
   plugins: [
