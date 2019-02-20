@@ -8,7 +8,7 @@ import SEO from '../components/seo';
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="About" keywords={[`gatsby`, `application`, `react`]} />
+    <SEO title="About" keywords={[`react`, `web developer`, `javascript`]} />
     <div className="about-wrapper">
       <h1 className="section-title">Who Am I?</h1>
       <div className="about-info">

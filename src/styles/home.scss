@@ -22,12 +22,6 @@ body {
   background-repeat: no-repeat;
   background-size: 100% 25%;
   background-position: 0 95%;
-
-  // // ! DOESNT WORK
-  // &:hover {
-  //   transform: scale(1.4);
-  //   background-image: linear-gradient(0deg, $grey, $dark-grey);
-  // }
 }
 
 .active {
@@ -345,8 +339,7 @@ header {
     display: inline-block;
 
     &:hover {
-      // transform: scale(1.2);
-      background-image: linear-gradient(0deg, $grey, $dark-grey);
+      transform: scale(1.2);
     }
   }
 }

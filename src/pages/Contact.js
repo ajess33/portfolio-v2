@@ -1,9 +1,11 @@
 import React from 'react';
 import '../styles/home.scss';
 import Layout from '../components/layout';
+import SEO from '../components/seo';
 
 const Contact = () => (
   <Layout>
+    <SEO title="Contact" />
     <div className="contact-wrapper">
       <h1 className="section-title">Get in Touch</h1>
       <ul>
@@ -22,7 +24,7 @@ const Contact = () => (
             <span className="chunky-link">LINKEDIN</span> /austinjess
           </li>
         </a>
-        <a href="/">
+        <a href="mailto:ajess33@gmail.com">
           <li>
             <span className="chunky-link">EMAIL</span> /ajess33@gmail.com
           </li>
