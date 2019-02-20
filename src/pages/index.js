@@ -20,16 +20,21 @@ const IndexPage = () => (
           and I'm a web developer.
         </p>
         <p>
-          I'm a deer hunter. I go all the time with my dad. One thing about
-          deer: they have very good vision. One thing about me: I'm better at
-          hiding, than they are at vision.
+          I have a passion for building things, but I'm not good with my hands
+          so I work with computers.
         </p>
         <p>
-          I'm always one step ahead... like a carpenter... that makes stairs.
+          As of right now, my weapon of choice is{' '}
+          <a className="chunky-link" href="https://reactjs.org/">
+            React
+          </a>{' '}
+          but I'm always looking for new things new learn, which is something I
+          love about the web development industry.
         </p>
         <p>
-          Nobody steals from Creed Bratton and gets away with it. The last
-          person to do this disappeared. His name? Creed Bratton
+          I am looking to gain more experience as a web developer so if you know
+          of an opportunity or would just like to talk, please feel free to
+          reach out!
         </p>
       </div>
       <Link className="contact-button" to="/Contact/">

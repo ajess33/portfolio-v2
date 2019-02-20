@@ -5,6 +5,8 @@ $grey: #3d4852;
 $breakpoint-tablet: 900px;
 $breakpoint-mobile: 680px;
 
+// ! have two active classes at the moment
+
 body {
   background: #ffffff;
   color: $grey;
@@ -20,23 +22,36 @@ body {
   background-repeat: no-repeat;
   background-size: 100% 25%;
   background-position: 0 95%;
+
+  // // ! DOESNT WORK
+  // &:hover {
+  //   transform: scale(1.4);
+  //   background-image: linear-gradient(0deg, $grey, $dark-grey);
+  // }
+}
+
+.active {
+  color: $dark-grey;
 }
 
 .contact-button {
   border: 1px solid $dark-grey;
   padding: 25px;
-  background: #fff;
+  background: $dark-grey;
   border-radius: 10px;
-  color: $dark-grey;
+  text-align: center;
+  color: #fff;
   font-weight: 700;
   letter-spacing: 1.5px;
-  margin: 150px auto 0 auto;
+  margin: 150px auto 50px auto;
   display: block;
   width: 150px;
+  box-shadow: 0 3px 5px hsla(0, 0%, 0%, 0.1);
 
   &:hover {
-    color: #fff;
-    background: $dark-grey;
+    border: 1px solid $dark-grey;
+    color: $dark-grey;
+    background: #fff;
   }
 }
 
@@ -52,6 +67,7 @@ header {
     // max-width: 700px;
     margin: 35px 0 15px 0;
     display: block;
+    line-height: 0.3;
   }
 
   img {
@@ -114,7 +130,7 @@ header {
       a {
         letter-spacing: 1.3px;
         font-size: 0.9rem;
-        font-weight: 600;
+        font-weight: 500;
         &:hover {
           color: $dark-grey;
         }
@@ -130,11 +146,10 @@ header {
   color: $dark-grey;
   @media (max-width: $breakpoint-mobile) {
     display: inline-block;
-    // display: inline;
-    // position: absolute;
-    // top: 90px;
-    // margin-left: 200px;
-    // cursor: pointer;
+  }
+
+  &:hover {
+    cursor: pointer;
   }
 }
 
@@ -162,9 +177,9 @@ header {
     }
   }
 
-  .about-info {
-    margin-bottom: 75px;
-  }
+  // .about-info {
+  //   margin-bottom: 30px;
+  // }
 
   p {
     line-height: 1.5;
@@ -206,7 +221,6 @@ header {
     li {
       background-color: #fafafa;
       box-shadow: 0 1px 3px hsla(0, 0%, 0%, 0.2);
-      // text-shadow: 0 0 2px hsla(0, 0%, 0%, 0.2);
       padding: 10px 15px;
       font-size: 1.2rem;
       margin-top: 10px;
@@ -218,14 +232,14 @@ header {
 // PORTFOLIO
 
 .portfolio-wrapper {
-  margin: 100px auto 100px auto;
+  margin: 100px auto 0 auto;
   max-width: 600px;
 
   @media (max-width: $breakpoint-mobile) {
     margin-top: 50px;
 
     .section-title {
-      font-size: 1.5rem;
+      font-size: 1.7rem;
     }
   }
 }
@@ -234,7 +248,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 50px;
+  margin-top: 70px;
 
   @media (max-width: 785px) {
     height: 700px;
@@ -263,14 +277,14 @@ header {
 
   p {
     margin: 25px 0;
-    line-height: 1.5;
-    max-width: 300px;
+    line-height: 1.7;
+    max-width: 325px;
   }
 
   a {
-    border: 1px solid $grey;
-    color: white;
-    background-color: $grey;
+    border: 1px solid $dark-grey;
+    color: $dark-grey;
+    background-color: #fff;
     letter-spacing: 1.5px;
     border-radius: 3px;
     padding: 15px 25px;
@@ -281,8 +295,8 @@ header {
     }
 
     &:hover {
-      color: $grey;
-      background-color: #ffffff;
+      color: #fff;
+      background-color: $dark-grey;
     }
   }
 }
@@ -331,7 +345,8 @@ header {
     display: inline-block;
 
     &:hover {
-      transform: scale(1.2);
+      // transform: scale(1.2);
+      background-image: linear-gradient(0deg, $grey, $dark-grey);
     }
   }
 }

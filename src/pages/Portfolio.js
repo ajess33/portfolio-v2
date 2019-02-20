@@ -34,13 +34,13 @@ const DunderProject = () => (
       <hr />
       <div className="project-info">
         <p>
-          Michael and his jeans... he gets in them, and I'm not exactly sure
-          what happens, but I can tell you he loves the way he looks in those
-          jeans. I know that's why he started casual Fridays.
+          This is a lorem ipsum generator using quotes from the tv show, 'The
+          Office'.
         </p>
         <p>
-          I wish there was a way to know you're in the good old days before
-          you've actually left them.
+          This was the first project I had made using React and it helped
+          solidify some of what I had learned in tutorials. This was also when I
+          fell in love with React.
         </p>
       </div>
       <div>
@@ -59,13 +59,11 @@ const AcgProject = () => (
       <hr />
       <div className="project-info">
         <p>
-          Michael and his jeans... he gets in them, and I'm not exactly sure
-          what happens, but I can tell you he loves the way he looks in those
-          jeans. I know that's why he started casual Fridays.
+          This was the first website I ever made specifically for production.
         </p>
         <p>
-          I wish there was a way to know you're in the good old days before
-          you've actually left them.
+          This was also my first time I had used Gatsby.js, the static site
+          generator, and it has been a tool I have been using it ever since.
         </p>
       </div>
       <div className="buttons">
@@ -83,14 +81,11 @@ const PomoProject = () => (
       <h3>Pomodoro Clock</h3>
       <hr />
       <div className="project-info">
+        <p>I made this project as part of the FreeCodeCamp curriculum.</p>
         <p>
-          Michael and his jeans... he gets in them, and I'm not exactly sure
-          what happens, but I can tell you he loves the way he looks in those
-          jeans. I know that's why he started casual Fridays.
-        </p>
-        <p>
-          I wish there was a way to know you're in the good old days before
-          you've actually left them.
+          It was the first project I had ever created when I began teaching
+          myself and I learned so much, but most importantly, I learned how
+          exciting it was to build something from the ground up.
         </p>
       </div>
       <div className="buttons">

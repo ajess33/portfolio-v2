@@ -4,33 +4,6 @@ import React from 'react';
 import headshot from '../images/headshot-sm.png';
 import { IoMdMenu } from 'react-icons/io';
 
-// STILL NEED TO MAKE RESPONSIVE
-
-// const Header = ({ siteTitle }) => (
-//   <header>
-//     <img src={headshot} alt="Headshot of Austin Jess" />
-//     <nav>
-//       <h1>
-//         <Link to="/">{siteTitle}</Link>
-//       </h1>
-//       <div className="menu-mobile">
-//         <IoMdMenu size={35} />
-//       </div>
-//       <ul className="menu-full">
-//         <li>
-//           <Link to="/Portfolio/">PORTFOLIO</Link>
-//         </li>
-//         <li>
-//           <Link to="/Toolbox/">TOOLBOX</Link>
-//         </li>{' '}
-//         <li>
-//           <Link to="/Contact/">CONTACT</Link>
-//         </li>
-//       </ul>
-//     </nav>
-//   </header>
-// );
-
 class Header extends React.Component {
   componentDidMount() {
     let menuFull = document.getElementById('js-main-nav');
@@ -54,13 +27,19 @@ class Header extends React.Component {
           </div>
           <ul id="js-main-nav">
             <li>
-              <Link to="/Portfolio/">PORTFOLIO</Link>
+              <Link to="/Portfolio/" activeClassName="active">
+                PORTFOLIO
+              </Link>
             </li>
             <li>
-              <Link to="/Toolbox/">TOOLBOX</Link>
+              <Link to="/Toolbox/" activeClassName="active">
+                TOOLBOX
+              </Link>
             </li>{' '}
             <li>
-              <Link to="/Contact/">CONTACT</Link>
+              <Link to="/Contact/" activeClassName="active">
+                CONTACT
+              </Link>
             </li>
           </ul>
         </nav>
