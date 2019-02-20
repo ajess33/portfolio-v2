@@ -2,12 +2,10 @@ module.exports = {
   siteMetadata: {
     title: `Austin Jess`,
     description: `Portfolio for React.js web developer, Austin Jess`,
-    siteURL: `https://austinjess.me`,
     author: `Austin Jess`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-sitemap`,
     `gatsby-plugin-sass`,
     {
       resolve: `gatsby-source-filesystem`,
